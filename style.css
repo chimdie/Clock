@@ -11,33 +11,31 @@ body{
     min-height: 100vh;
     margin: 0;
 }
-.header{
-    background-color: #1b1b01;
-    border-radius: 1rem;
-}
-.header p{
-    font-size: 2rem;
-    padding: 0  1rem;
-    font-style: italic;
-}
 .container{
     display: flex;
     flex-direction: row;
-    margin: 1rem;
 }
 .box{
     background-color: #01011b;
-    padding: 2rem;
     margin: .50rem;
-    border-radius: 1rem
+    width: 6.25rem;
+    height: 9.375rem;
 }
 #count p{
     margin: 1rem;
     text-align: center;
-    font-size: 50px;
+    font-size: 3.125rem;
 }
 .tag{
     text-align: center;
     position: relative;
-    top: 30px;
+    top: 0.625rem;
+}
+
+@media screen and (min-device-width: 1200px){
+    .box{
+        width: 9.375rem;
+        height: fit-content;
+        padding: 2rem;
+    }
 }
